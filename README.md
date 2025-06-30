@@ -119,7 +119,7 @@ Open the following pages **in separate tabs**:
 ### 👤 2. Manager Setup
 
 * Register and login as manager
-* Create **menu items** and **tables**
+* Create **menu items** and **tables** first IMPORTANT ⚠️
 
 ### 📊 3. Real-time Reports
 
