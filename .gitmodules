@@ -1,0 +1,6 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/LUX14Zx/BonreCreme-Frontend.git
+[submodule "backend"]
+	path = backend
+	url = https://github.com/LUX14Zx/BonreCreme-Backend.git
