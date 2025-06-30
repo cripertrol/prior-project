@@ -66,7 +66,6 @@ A modern **full-stack** restaurant management application for ordering, kitchen 
 | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Docker**         | Platform to build, share, and run containerized applications ([docker.com](https://www.docker.com))                                             |
 | **Docker Compose** | Tool for defining and running multi-container Docker applications with YAML config ([docs.docker.com/compose](https://docs.docker.com/compose)) |
-|
 
 ---
 
@@ -99,8 +98,8 @@ git submodule update --init --recursive
 3. **Build & start containers**
 
 ```bash
-docker compose build
-docker compose up
+docker-compose build
+docker-compose up
 
 ```
 
