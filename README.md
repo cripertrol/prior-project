@@ -18,7 +18,7 @@ A modern **full-stack** restaurant management application for ordering, kitchen 
     - [📦 Installation](#-installation)
   - [🔗 Access](#-access)
   - [🍽️ App Usage Guide](#️-app-usage-guide)
-    - [🚀 1. Initial Setup](#-1-initial-setup)
+    - [🚀 1. Initial Setup (Before Open a restaurant)](#-1-initial-setup-before-open-a-restaurant)
     - [👤 2. Manager Setup](#-2-manager-setup)
     - [📊 3. Real-time Reports](#-3-real-time-reports)
     - [🍽️ 4. Customer Ordering](#️-4-customer-ordering)
@@ -106,7 +106,7 @@ docker-compose up
 
 ## 🍽️ App Usage Guide
 
-### 🚀 1. Initial Setup
+### 🚀 1. Initial Setup (Before Open a restaurant)
 
 Open the following pages **in separate tabs**:
 
