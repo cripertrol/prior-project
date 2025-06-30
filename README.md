@@ -123,7 +123,7 @@ Open the following pages **in separate tabs**:
 
 ### 📊 3. Real-time Reports
 
-* View real-time billing under **Manager > Reports** (uses SSE)
+* View real-time billing under **Manager > Reports** (uses SSE) (⚠️ but you need to open report page don't change a page to another page bill ticket information (from SSE) will be lost 💀)
 
 ### 🍽️ 4. Customer Ordering
 
