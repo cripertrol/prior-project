@@ -7,37 +7,43 @@ A modern **full-stack** restaurant management application for ordering, kitchen 
 ## 📋 Table of Contents
 
 - [🍦 Bonrecreme](#-bonrecreme)
-   - [📋 Table of Contents](#-table-of-contents)
-   - [✨ Features](#-features)
-   - [🛠️ Tech Stack Overview](#️-tech-stack-overview)
-      - [🎨 Frontend](#-frontend)
-      - [⚙️ Backend](#️-backend)
-      - [🚀 DevOps (Containerization)](#-devops-containerization)
-
-   - [🚀 Getting Started](#-getting-started)
-      - [Prerequisites](#prerequisites)
-      - [Installation](#installation)
-
-   - [🔗 Access](#-access)
-   - [🖥️ API Endpoints](#️-api-endpoints)
-   - [🤝 Contributing](#-contributing)
-   - [⚖️ License](#️-license)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [✨ Features](#-features)
+  - [🛠️ Tech Stack Overview](#️-tech-stack-overview)
+    - [🎨 Frontend](#-frontend)
+    - [⚙️ Backend](#️-backend)
+    - [🚀 DevOps](#-devops)
+  - [🚀 Getting Started](#-getting-started)
+    - [⚡ Prerequisites](#-prerequisites)
+    - [📦 Installation](#-installation)
+  - [🔗 Access](#-access)
+  - [🍽️ App Usage Guide](#️-app-usage-guide)
+    - [🚀 1. Initial Setup](#-1-initial-setup)
+    - [👤 2. Manager Setup](#-2-manager-setup)
+    - [📊 3. Real-time Reports](#-3-real-time-reports)
+    - [🍽️ 4. Customer Ordering](#️-4-customer-ordering)
+    - [👨‍🍳 5. Kitchen Station](#-5-kitchen-station)
+    - [🧑‍🍽️ 6. Waitstaff Station](#️-6-waitstaff-station)
+    - [💳 7. Checkout](#-7-checkout)
+    - [🧾 8. Reports \& Export](#-8-reports--export)
+  - [🖥️ API Endpoints](#️-api-endpoints)
+  - [🤝 Contributing](#-contributing)
+  - [⚖️ License](#️-license)
 
 ---
 
 ## ✨ Features
 
-- 📃 **Menu Management**: CRUD operations for menu items
-- 🍽️ **Table Management**: Create, update, and delete restaurant tables
-- 🧾 **Checkout & Billing**: Generate bills (PDF/CSV) and process payments
-- 🥘 **Order Flow**:
+* 📃 **Menu Management**: CRUD operations for menu items
+* 🍽️ **Table Management**: Create, update, and delete restaurant tables
+* 🧾 **Checkout & Billing**: Generate bills (PDF/CSV) and process payments
+* 🥘 **Order Flow**:
 
-   - **Customer** places orders
-   - **Kitchen** updates cooking status
-   - **Waitstaff** serves ready orders
-
-- 📈 **Reporting**: Monthly reports exported as PDF or Excel
-- 🔒 **JWT Authentication** for manager APIs
+  * **Customer** places orders
+  * **Kitchen** updates cooking status
+  * **Waitstaff** serves ready orders
+* 📈 **Reporting**: Monthly reports exported as PDF or Excel
+* 🔒 **JWT Authentication** for manager APIs
 
 ---
 
@@ -45,83 +51,107 @@ A modern **full-stack** restaurant management application for ordering, kitchen 
 
 ### 🎨 Frontend
 
-| Technology                | Role                                                                                                                                               |
-| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Vite**                  | A next-gen frontend build tool offering fast startup, HMR (Hot Module Replacement), and optimized builds ([vitejs.dev](https://vitejs.dev))        |
-| **HTML, CSS, JavaScript** | Core web technologies for structure (HTML), styling (CSS), and interactivity (JavaScript) ([developer.mozilla.org](https://developer.mozilla.org)) |
-| **Node.js**               | JavaScript runtime environment for server-side and tooling support ([nodejs.org](https://nodejs.org))                                              |
+| Technology                | Role                                                                                                                     |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **Vite**                  | A next-gen frontend build tool offering fast startup, HMR, and optimized builds ([vitejs.dev](https://vitejs.dev))       |
+| **HTML, CSS, JavaScript** | Core web technologies for structure, styling, and interactivity ([developer.mozilla.org](https://developer.mozilla.org)) |
+| **Node.js**               | JavaScript runtime environment for server-side tooling ([nodejs.org](https://nodejs.org))                                |
 
 ### ⚙️ Backend
 
-| Technology       | Role                                                                                                                                         |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Spring Boot**  | Java framework for building robust backends and microservices with embedded servers ([spring.io](https://spring.io/projects/spring-boot))    |
-| **PostgreSQL**   | Open-source relational database system for transactional data and complex queries ([postgresql.org](https://www.postgresql.org))             |
-| **Redis**        | In-memory data store used for caching and fast data access ([redis.io](https://redis.io))                                                    |
-| **Apache Kafka** | Distributed event streaming platform for building real-time data pipelines and streaming apps ([kafka.apache.org](https://kafka.apache.org)) |
+| Technology       | Role                                                                                                                                      |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **Spring Boot**  | Java framework for building robust backends and microservices with embedded servers ([spring.io](https://spring.io/projects/spring-boot)) |
+| **PostgreSQL**   | Open-source relational database system for transactional data ([postgresql.org](https://www.postgresql.org))                              |
+| **Redis**        | In-memory data store used for caching and fast data access ([redis.io](https://redis.io))                                                 |
+| **Apache Kafka** | Distributed event streaming platform ([kafka.apache.org](https://kafka.apache.org))                                                       |
 
-### 🚀 DevOps (Containerization)
+### 🚀 DevOps
 
-| Technology         | Role                                                                                                                                            |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Docker**         | Platform to build, share, and run containerized applications ([docker.com](https://www.docker.com))                                             |
-| **Docker Compose** | Tool for defining and running multi-container Docker applications with YAML config ([docs.docker.com/compose](https://docs.docker.com/compose)) |
+| Technology         | Role                                                                                                                   |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------- |
+| **Docker**         | Platform to build, share, and run containerized apps ([docker.com](https://www.docker.com))                            |
+| **Docker Compose** | Tool for defining and running multi-container Docker apps ([docs.docker.com/compose](https://docs.docker.com/compose)) |
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### ⚡ Prerequisites
 
-- **Git** ≥ 2.30
-- **Docker** & **Docker Compose**
-- (Optional) **Postman** or **Hoppscotch** for testing APIs
+* **Git** ≥ 2.30
+* **Docker** & **Docker Compose**
+* (Optional) **Postman** or **Hoppscotch** for testing APIs
 
-### Installation
-
-1. **Clone the repo**
+### 📦 Installation
 
 ```bash
 git clone https://github.com/LUX14Zx/pior-test.git
 cd pior-test
 
-
-```
-
-2. **Initialize submodules**
-
-```bash
 git submodule update --init --recursive
 
-```
-
-3. **Build & start containers**
-
-```bash
 docker-compose build
 docker-compose up
-
 ```
 
 ---
 
 ## 🔗 Access
 
-* **Frontend UI**
-   Open your browser at:
+* **Frontend UI**: [http://localhost:4173](http://localhost:4173)
+* **Backend API**: [http://localhost:8080/api/v1](http://localhost:8080/api/v1)
 
-   - [http://localhost:4173](http://localhost:4173)
+---
 
-* **Backend API**
-   Base URL:
+## 🍽️ App Usage Guide
 
-   - [http://localhost:8080/api/v1](http://localhost:8080/api/v1)
+### 🚀 1. Initial Setup
+
+Open the following pages **in separate tabs**:
+
+* Customer
+* Kitchen
+* Waitstaff
+* Cashier
+* Manager
+
+### 👤 2. Manager Setup
+
+* Register and login as manager
+* Create **menu items** and **tables**
+
+### 📊 3. Real-time Reports
+
+* View real-time billing under **Manager > Reports** (uses SSE)
+
+### 🍽️ 4. Customer Ordering
+
+* Select a table
+* Place orders (multiple times possible)
+
+### 👨‍🍳 5. Kitchen Station
+
+* View orders
+* Update cooking status
+
+### 🧑‍🍽️ 6. Waitstaff Station
+
+* Serve orders marked as **Ready**
+
+### 💳 7. Checkout
+
+* Cashier generates bill for table
+* Customer makes payment
+
+### 🧾 8. Reports & Export
+
+* Payment reflected in real-time
+* Export monthly sales as **PDF** or **CSV**
 
 ---
 
 ## 🖥️ API Endpoints
-
-Below is a quick summary of core endpoints:
 
 | Service     | Method | Endpoint                                       | Description                     |
 | ----------- | ------ | ---------------------------------------------- | ------------------------------- |
@@ -153,7 +183,7 @@ Below is a quick summary of core endpoints:
 4. Push to the branch (`git push origin feature/YourFeature`)
 5. Open a Pull Request
 
-Please follow the [Contributor Covenant](https://www.contributor-covenant.org/) in all contributions.
+Follow the [Contributor Covenant](https://www.contributor-covenant.org/) in all contributions.
 
 ---
 
