@@ -108,13 +108,15 @@ docker-compose up
 
 ### 🚀 1. Initial Setup (Before Open a restaurant)
 
-Open the following pages **in separate tabs**:
+Open the following these pages **in separate tabs**:
 
 * Customer
 * Kitchen
 * Waitstaff
 * Cashier
 * Manager
+
+> Open All of them insperate tabs:
 
 ### 👤 2. Manager Setup
 
