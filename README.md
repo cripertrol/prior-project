@@ -1,6 +1,6 @@
 # 🍦 Bonrecreme
 
-A modern **full-stack** restaurant management application for ordering, kitchen tracking, billing, and reporting—powered by microservices and real-time messaging.
+A modern **full-stack** restaurant management application for ordering, kitchen tracking, billing, and reporting—powered.
 
 ---
 
